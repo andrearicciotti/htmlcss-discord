@@ -56,6 +56,16 @@ footer {
     background-color: var(--footer-col);
 }
 
+.wave-grey {
+    width: 100%;
+    filter: invert(98%) sepia(50%) saturate(256%) hue-rotate(229deg) brightness(119%) contrast(92%);
+    margin-bottom: -2rem;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
 .logo {
     width: 20%;
     text-align: left;

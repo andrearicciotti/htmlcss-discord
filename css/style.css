@@ -9,6 +9,7 @@ img {
     max-width: 100%;
 }
 
+
 /* UTILITIES */
 :root {
     --header-col: #355de1;
@@ -17,6 +18,7 @@ img {
     --discord-col: #7688d4;
     --blackbtn-col: #24272a;
 }
+
 
 /* COMMON */
 body {
@@ -42,17 +44,33 @@ h3 {
     font-size: 1.8rem;
 }
 
+h4 {
+    color: var(--discord-col);
+}
+
 p {
     font-size: 1.1rem;
+}
+
+footer {
+    background-color: var(--footer-col);
+}
+
+.logo {
+    width: 20%;
+    text-align: left;
+    padding: .5rem .5rem;
+}
+
+.login-registration {
+    width: 20%;
+    text-align: right;
+    padding: .5rem .5rem;
 }
 
 .fa-down-long {
     padding-right: .4rem;
     font-size: .8rem;
-}
-
-footer {
-    background-color: var(--footer-col);
 }
 
 .link-button {
@@ -116,6 +134,10 @@ footer {
     justify-content: space-around;
 }
 
+.justify-between {
+    justify-content: space-between;
+}
+
 .justify-start {
     justify-content: flex-start;
 }
@@ -130,18 +152,18 @@ footer {
     padding: .5rem 1rem 0 0;
 }
 
+
 /* HEADER */
 header {
     height: 70px;
     background-color: var(--header-col);
 }
 
-.flexnav {
+.flexnav-foot {
     width: 70%;
     margin: 0 auto;
     padding: 1rem;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     color: white;
 }
@@ -157,17 +179,6 @@ header {
     padding: .5rem .5rem;
 }
 
-.logo {
-    width: 20%;
-    text-align: left;
-    padding: .5rem .5rem;
-}
-
-.login {
-    width: 20%;
-    text-align: right;
-    padding: .5rem .5rem;
-}
 
 /* HERO */
 .hero {   
@@ -196,6 +207,8 @@ header {
     font-weight: 100;
 }
 
+
+/* MAIN */
 /* SECTION-1-2-3 */
 .inner-img {
     width: 57%;
@@ -216,8 +229,8 @@ header {
     padding: 2rem .5rem 0 1rem;
 }
 
-/* SECTION-4 */
 
+/* SECTION-4 */
 .row-small {
     height: 24%;
 }
@@ -239,6 +252,7 @@ header {
     padding-top: 3.5rem;
     padding-bottom: 7rem;
 }
+
 
 /* FOOTER */
 .footer-top {
@@ -277,103 +291,18 @@ header {
     vertical-align: baseline;
 }
 
-.footer-bottom {
-    width: 100%;
-    height: 70px;
+.col-small li {
+    color: white;
+    font-weight: 100;
     padding-top: 1rem;
 }
 
-.footer-flex {
-    width: 70%;
-    height: 90%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* DEBUG */
-/* div {
-    border: 1px dashed black;
-} */
-
-/* .login {
-    background-color: lightsalmon;
-}
-
-.logo {
-    background-color: lightsalmon;
-}
-
-.logo-footer {
-    background-color: lightsalmon;
-}
-
-.link {
-    background-color: lightsalmon;
-} */
-
-.hero {
-    background-color: blue;
-}
-/* 
-.hero-inner {
-    background-color: #ffc0cb;
-} */
-
-.section-2 {
-    background-color: lightgray;
-}
-
-.section-4 {
-    background-color: lightgray;
+.hrseparator {
+    border-top: 1px solid var(--discord-col);
+    margin-top: 2rem;
 }
 
 .footer-bottom {
-    border-top: 1px solid white
-}
-/* 
-.flex-container {
-    border: 1px dashed black;
-    background-color: aquamarine;
-} */
- 
-/* .inner-txt {
-    background-color: pink;
-} */
-
-/* .inner-img {
-    background-color: blue;
-} */
-
-.inner-green {
-    background-color: green;
-}
-
-/* .col-big {
-    background-color: pink;
-} */
-
-.col-small {
-    background-color: cyan;
-}
-
-.bottone {
-    background-color: lightsalmon;
-}
-
-.footer-flex {
-    background-color: aquamarine;
+    height: 70px;
+    padding-top: 1rem;
 }

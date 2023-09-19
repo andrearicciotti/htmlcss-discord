@@ -81,6 +81,10 @@ a {
     justify-content: space-around;
 }
 
+.justify-start {
+    justify-content: flex-start;
+}
+
 /* HEADER */
 header {
     height: 70px;
@@ -155,35 +159,35 @@ header {
 /* SECTION-1, SECTION-3 */
 .section-1, .section-3 {
     width: 100%;
-    height: 25rem;
+
     padding-top: 2.4rem;
 }
 
 .inner-img {
     width: 57%;
-    padding: 1.5rem;
+    padding: 1rem 0 2rem;
 }
 
 .inner-txt {
     width: 43%;
     text-align: left;
+    padding: 2rem;
 }
 
 .inner-txt h2 {
     font-size: 2.3rem;
-    font-weight: 500;
-    padding: 3rem 7.5rem 0 1rem;
+    font-weight: 600;
+    padding: .8rem 3.5rem 0 1rem;
 }
 
 .inner-txt p {
-    padding: 2rem 2.8rem 0 1rem;
+    padding: 2rem .5rem 0 1rem;
     font-size: 1.1rem;
 }
 
 /* SECTION-2 */
 .section-2 {
     width: 100%;
-    height: 25rem;
     padding-top: 2.4rem;
 }
 

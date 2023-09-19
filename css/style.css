@@ -55,13 +55,30 @@ a {
     color: white;
 }
 
-.section-wrapper {
+.container {
     width: 70%;
     height: 90%;
     margin: 0 auto;
+}
+
+.flex-container {    
     display: flex;
+}
+
+.justify-center {
     justify-content: center;
-    flex-wrap: wrap;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.flex-direction-col {
+    flex-direction: column;
+}
+
+.justify-around {
+    justify-content: space-around;
 }
 
 /* HEADER */
@@ -104,8 +121,7 @@ header {
 }
 
 /* HERO */
-.hero {
-    
+.hero {   
     text-align: center;
     padding-top: 2rem;
     background-image: url(../img/jumbo.png);
@@ -131,21 +147,38 @@ header {
     font-weight: 100;
 }
 
+.buttons i {
+    padding-right: .4rem;
+    font-size: .8rem;
+}
+
 /* SECTION-1, SECTION-3 */
 .section-1, .section-3 {
     width: 100%;
     height: 25rem;
-    display: flex;
     padding-top: 2.4rem;
 }
 
- .inner-blue {
+.inner-img {
     width: 57%;
- }
+    padding: 1.5rem;
+}
 
- .inner-pink {
+.inner-txt {
     width: 43%;
- }
+    text-align: left;
+}
+
+.inner-txt h2 {
+    font-size: 2.3rem;
+    font-weight: 500;
+    padding: 3rem 7.5rem 0 1rem;
+}
+
+.inner-txt p {
+    padding: 2rem 2.8rem 0 1rem;
+    font-size: 1.1rem;
+}
 
 /* SECTION-2 */
 .section-2 {
@@ -262,19 +295,19 @@ footer {
 .footer-bottom {
     border-top: 1px solid white
 }
-
-.section-wrapper {
+/* 
+.flex-container {
     border: 1px dashed black;
     background-color: aquamarine;
-}
+} */
  
-.inner-pink {
+/* .inner-txt {
     background-color: pink;
-}
+} */
 
-.inner-blue {
+/* .inner-img {
     background-color: blue;
-}
+} */
 
 .inner-green {
     background-color: green;

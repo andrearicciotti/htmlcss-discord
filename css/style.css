@@ -15,6 +15,7 @@ img {
     --section-gray: #f5f5f5;
     --footer-col: #24272a;
     --discord-col: #7688d4;
+    --blackbtn-col: #24272a;
 }
 
 /* COMMON */
@@ -34,8 +35,24 @@ a {
 
 .link-button {
     border-radius: 18px 18px 18px 18px;
-    padding: .6rem .9rem;
+    padding: .6rem 1rem;
     padding-bottom: .7rem;
+}
+
+.white-button {
+    background-color: white;
+    color: black;
+}
+
+.black-button {
+    background-color: var(--blackbtn-col);
+    color: white;
+    margin-left: 1rem;
+}
+
+.discordcol-button {
+    background-color: var(--discord-col);
+    color: white;
 }
 
 .section-wrapper {
@@ -86,23 +103,32 @@ header {
     padding: .5rem .5rem;
 }
 
-.white-button {
-    background-color: white;
-    color: black;
-}
-
 /* HERO */
 .hero {
-    width: 100%;
-    height: 22.5rem;
+    
     text-align: center;
     padding-top: 2rem;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    color: white;
 }
 
-.heroflex {
+.hero-inner {
     width: 50%;
     height: 90%;
     margin: 0 auto;
+    padding: 7rem 1rem;
+}
+
+.hero-inner h1 {
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+.hero-inner p {
+    padding: 2rem 2rem 2rem;
+    line-height: 1.7rem;
+    font-weight: 100;
 }
 
 /* SECTION-1, SECTION-3 */
@@ -212,10 +238,10 @@ footer {
 .hero {
     background-color: blue;
 }
-
-.heroflex {
-    background-color: pink;
-}
+/* 
+.hero-inner {
+    background-color: #ffc0cb;
+} */
 
 .section-2 {
     background-color: lightgray;

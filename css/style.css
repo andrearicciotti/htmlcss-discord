@@ -9,9 +9,18 @@ img {
     max-width: 100%;
 }
 
+/* UTILITIES */
+:root {
+    --header-col: #355de1;
+    --section-gray: #f5f5f5;
+    --footer-col: #24272a;
+    --discord-col: #7688d4;
+}
+
 /* COMMON */
 body {
-    font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Whitney', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 100;
 }
 
 li {
@@ -21,6 +30,12 @@ li {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+.link-button {
+    border-radius: 18px 18px 18px 18px;
+    padding: .6rem .9rem;
+    padding-bottom: .7rem;
 }
 
 .section-wrapper {
@@ -35,7 +50,7 @@ a {
 /* HEADER */
 header {
     height: 70px;
-    background-color: lightblue;
+    background-color: var(--header-col);
 }
 
 .flexnav {
@@ -45,6 +60,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    color: white;
 }
 
 .link {
@@ -54,7 +70,7 @@ header {
 .links {
     display: flex;
     justify-content: center;
-    gap: .5rem;
+    gap: 1.8rem;
     padding: .5rem .5rem;
 }
 
@@ -68,6 +84,11 @@ header {
     width: 20%;
     text-align: right;
     padding: .5rem .5rem;
+}
+
+.white-button {
+    background-color: white;
+    color: black;
 }
 
 /* HERO */
@@ -168,11 +189,11 @@ footer {
 
 
 /* DEBUG */
-div {
+/* div {
     border: 1px dashed black;
-}
+} */
 
-.login {
+/* .login {
     background-color: lightsalmon;
 }
 
@@ -186,7 +207,7 @@ div {
 
 .link {
     background-color: lightsalmon;
-}
+} */
 
 .hero {
     background-color: blue;
